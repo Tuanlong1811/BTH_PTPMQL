@@ -18,8 +18,11 @@ namespace BTH_2002.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+       
+       [HttpPost]
+        public IActionResult Index(string FullName, string Email)
         {
+            ViewBag.name = "Hello" + FullName + "-" + Email;
             return View();
         }
 
@@ -28,5 +31,7 @@ namespace BTH_2002.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
+       
