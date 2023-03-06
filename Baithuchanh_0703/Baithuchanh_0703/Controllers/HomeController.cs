@@ -1,8 +1,8 @@
-﻿using BaiThucHanh0703.Models;
+﻿using Baithuchanh_0703.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Baithuchanh0703.Controllers
+namespace Baithuchanh_0703.Controllers
 {
     public class HomeController : Controller
     {

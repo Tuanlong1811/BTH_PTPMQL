@@ -1,9 +1,11 @@
-namespace Baithuchanh0703.Models
-{
-    public class ErrorViewModel
-    {
-        public string? RequestId { get; set; }
+namespace BaiThucHanh0703.Models;
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+public class ErrorViewModel
+{
+    public string? RequestId { get; set; }
+
+    public bool GetShowRequestId()
+    {
+        return !string.IsNullOrEmpty(RequestId);
     }
 }
